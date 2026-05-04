@@ -1,0 +1,80 @@
+# Reusable CI workflow consumed by every bare-swift package.
+#
+# In a package repo, .github/workflows/ci.yml looks like:
+#
+#   name: CI
+#   on: [push, pull_request]
+#   jobs:
+#     ci:
+#       uses: bare-swift/bare-swift/.github/workflows/package-ci.yml@main
+#
+name: package-ci
+
+on:
+  workflow_call:
+    inputs:
+      run-sanitizers:
+        description: "Run TSan + ASan test passes"
+        required: false
+        type: boolean
+        default: true
+      check-api-stability:
+        description: "Run swift package diagnose-api-breaking-changes against previous tag"
+        required: false
+        type: boolean
+        default: false  # turn on per-package once a tag exists
+
+jobs:
+  build-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-14, ubuntu-22.04, ubuntu-24.04]
+        swift: ["6.0", "6.1"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Swift (Linux)
+        if: runner.os == 'Linux'
+        uses: SwiftyLab/setup-swift@latest
+        with:
+          swift-version: ${{ matrix.swift }}
+      - name: Print Swift version
+        run: swift --version
+      - name: Build (debug)
+        run: swift build -c debug -Xswiftc -strict-concurrency=complete
+      - name: Build (release)
+        run: swift build -c release -Xswiftc -strict-concurrency=complete
+      - name: Test
+        run: swift test --parallel -Xswiftc -strict-concurrency=complete
+
+  sanitizers:
+    if: ${{ inputs.run-sanitizers }}
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test with ThreadSanitizer
+        run: swift test --sanitize=thread -Xswiftc -strict-concurrency=complete
+      - name: Test with AddressSanitizer
+        run: swift test --sanitize=address -Xswiftc -strict-concurrency=complete
+
+  docc:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build DocC
+        run: swift package generate-documentation --warnings-as-errors
+
+  api-stability:
+    if: ${{ inputs.check-api-stability }}
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Determine previous tag
+        id: prev
+        run: echo "tag=$(git tag --sort=-v:refname | head -1)" >> $GITHUB_OUTPUT
+      - name: Diagnose API breaking changes
+        if: steps.prev.outputs.tag != ''
+        run: swift package diagnose-api-breaking-changes ${{ steps.prev.outputs.tag }}

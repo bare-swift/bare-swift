@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+.swiftpm/
+.vscode/
+.idea/
+*.xcodeproj/
+DerivedData/
+Package.resolved
+site/index.html
+site/*.css

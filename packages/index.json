@@ -1,0 +1,4 @@
+{
+  "$schema_comment": "Each entry: name, module, tagline (1-line), repo (https URL), version (semver), source_crate (or null), tier (one of: foundation, encoding, hashing, format, observability, config, util, demo).",
+  "packages": []
+}

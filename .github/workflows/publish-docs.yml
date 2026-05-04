@@ -1,0 +1,39 @@
+# Reusable workflow for publishing DocC to GitHub Pages.
+# Each package's .github/workflows/docs.yml looks like:
+#
+#   name: Publish docs
+#   on:
+#     push:
+#       tags: ['v*']
+#   jobs:
+#     publish:
+#       uses: bare-swift/bare-swift/.github/workflows/publish-docs.yml@main
+#       permissions:
+#         pages: write
+#         id-token: write
+#
+name: publish-docs
+
+on:
+  workflow_call:
+
+jobs:
+  build-and-deploy:
+    runs-on: macos-14
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build DocC archive
+        run: |
+          swift package --allow-writing-to-directory ./docs \
+            generate-documentation \
+            --target $(swift package describe --type json | python3 -c "import json,sys; print(json.load(sys.stdin)['products'][0]['name'])") \
+            --transform-for-static-hosting \
+            --hosting-base-path "$(basename $GITHUB_REPOSITORY)" \
+            --output-path ./docs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+      - uses: actions/deploy-pages@v4
