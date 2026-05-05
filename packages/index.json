@@ -2,6 +2,15 @@
   "$schema_comment": "Each entry: name, module, tagline (1-line), repo (https URL), version (semver), source_crate (or null), tier (one of: foundation, encoding, hashing, format, observability, config, util, demo).",
   "packages": [
     {
+      "name": "swift-base64",
+      "module": "Base64",
+      "tagline": "Sendable, Foundation-free Base64 (standard + URL-safe, padded + unpadded, constant-time).",
+      "repo": "https://github.com/bare-swift/swift-base64",
+      "version": "0.1.0",
+      "source_crate": "base64",
+      "tier": "encoding"
+    },
+    {
       "name": "swift-hex",
       "module": "Hex",
       "tagline": "Sendable, Foundation-free hex encoding (incl. constant-time).",
