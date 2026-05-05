@@ -38,6 +38,15 @@
       "tier": "foundation"
     },
     {
+      "name": "swift-varint",
+      "module": "Varint",
+      "tagline": "LEB128 (unsigned + signed) + ZigZag — protobuf-varint / DWARF / WASM wire-compatible.",
+      "repo": "https://github.com/bare-swift/swift-varint",
+      "version": "0.1.0",
+      "source_crate": "leb128",
+      "tier": "encoding"
+    },
+    {
       "name": "swift-greet",
       "module": "Greet",
       "tagline": "A friendly greeter — Phase 0 demo package.",
