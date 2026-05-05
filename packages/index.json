@@ -11,6 +11,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-crc",
+      "module": "CRC",
+      "tagline": "CRC8/16/32/64 — generic engine + catalog (Ethernet, iSCSI, MODBUS, XMODEM, XZ, …).",
+      "repo": "https://github.com/bare-swift/swift-crc",
+      "version": "0.1.0",
+      "source_crate": "crc",
+      "tier": "hashing"
+    },
+    {
       "name": "swift-hex",
       "module": "Hex",
       "tagline": "Sendable, Foundation-free hex encoding (incl. constant-time).",
