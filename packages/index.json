@@ -1,4 +1,14 @@
 {
   "$schema_comment": "Each entry: name, module, tagline (1-line), repo (https URL), version (semver), source_crate (or null), tier (one of: foundation, encoding, hashing, format, observability, config, util, demo).",
-  "packages": []
+  "packages": [
+    {
+      "name": "swift-greet",
+      "module": "Greet",
+      "tagline": "A friendly greeter — Phase 0 demo package.",
+      "repo": "https://github.com/bare-swift/swift-greet",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "demo"
+    }
+  ]
 }
