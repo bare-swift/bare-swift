@@ -29,13 +29,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-14, ubuntu-22.04, ubuntu-24.04]
-        swift: ["6.0", "6.1"]
+        include:
+          - { os: macos-15,    swift: "6.0", install-swift: false }
+          - { os: ubuntu-22.04, swift: "6.0", install-swift: true }
+          - { os: ubuntu-22.04, swift: "6.1", install-swift: true }
+          - { os: ubuntu-24.04, swift: "6.0", install-swift: true }
+          - { os: ubuntu-24.04, swift: "6.1", install-swift: true }
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - name: Install Swift (Linux)
-        if: runner.os == 'Linux'
+      - name: Install Swift
+        if: ${{ matrix.install-swift }}
         uses: SwiftyLab/setup-swift@latest
         with:
           swift-version: ${{ matrix.swift }}
@@ -50,7 +54,7 @@ jobs:
 
   sanitizers:
     if: ${{ inputs.run-sanitizers }}
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - name: Test with ThreadSanitizer
@@ -59,7 +63,7 @@ jobs:
         run: swift test --sanitize=address -Xswiftc -strict-concurrency=complete
 
   docc:
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - name: Build DocC
@@ -67,7 +71,7 @@ jobs:
 
   api-stability:
     if: ${{ inputs.check-api-stability }}
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
         with:
