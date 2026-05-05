@@ -29,6 +29,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-uuid",
+      "module": "UUID",
+      "tagline": "RFC 9562 UUIDs (v4, v7) and ULIDs — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-uuid",
+      "version": "0.1.0",
+      "source_crate": "uuid",
+      "tier": "foundation"
+    },
+    {
       "name": "swift-greet",
       "module": "Greet",
       "tagline": "A friendly greeter — Phase 0 demo package.",
