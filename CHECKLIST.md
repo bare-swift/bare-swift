@@ -36,3 +36,15 @@ For each: enable Discussions, enable Issues, enable Pages (source: GitHub Action
 
 - [ ] Create a `bare-swift` tag on the Swift Forums for cross-pollination.
 - [ ] Set up GitHub Discussions categories: General, Q&A, Ideas, Show and tell, RFC discussion.
+
+---
+
+## Phase 0 status
+
+- [x] Umbrella repo content authored
+- [x] RFC-0001 + RFC-0002 landed
+- [x] CLI tool (`bare-swift new` + `extract-vectors` + `gen-site`) built and tested
+- [x] Shared CI / DocC / release workflows authored
+- [x] Demo package `swift-greet` scaffolded, tested, consumed end-to-end
+
+**Remaining for public Phase 0 launch (manual GH-side):** items above in this document.
