@@ -1,20 +1,25 @@
 # bare-swift — manual setup checklist
 
-Phase 0 produces files locally. The following steps require human action on GitHub and other external services. Walk through them in order.
+This checklist tracks the state of the bare-swift GitHub presence. Items marked `[x]` are done; items marked `[ ]` still need human action (credentials, accounts, external services).
 
 ## Org
 
-- [ ] Create the GitHub organization `bare-swift`.
-- [ ] Add the project lead's account as the org owner.
+- [x] Create the GitHub organization `bare-swift`.
+- [x] Add the project lead's account as the org owner.
 - [ ] Set the org's public-facing email and homepage to point at this README / the future site.
 
-## Repos to create on GitHub
+## Repos created on GitHub
 
-- [ ] `bare-swift/bare-swift` — push this repo as the umbrella. Set as default branch: `main`.
-- [ ] `bare-swift/bare-swift-cli` — push the CLI repo.
-- [ ] `bare-swift/swift-greet` — push the demo package.
+- [x] `bare-swift/bare-swift` — umbrella, default branch `main`.
+- [x] `bare-swift/bare-swift-cli` — CLI tool, default branch `main`.
+- [x] `bare-swift/swift-greet` — demo package, default branch `main`, tag `v0.1.0`.
 
-For each: enable Discussions, enable Issues, enable Pages (source: GitHub Actions), enable branch protection on `main` (require PR, require status checks).
+For each:
+- [x] Issues enabled.
+- [x] Discussions enabled (umbrella only — packages keep issue-only).
+- [x] Pages enabled (source: GitHub Actions).
+- [ ] Branch protection on `main` (require PR, require status checks). Run for each repo:
+      `gh api -X PUT "repos/bare-swift/<repo>/branches/main/protection" --input <protection.json>`
 
 ## Identity
 
@@ -22,20 +27,20 @@ For each: enable Discussions, enable Issues, enable Pages (source: GitHub Action
 - [ ] Replace placeholder in `SECURITY.md` with a real security contact email.
 - [ ] Generate a project GPG key for signing release tags. Add the public key to GitHub on the project lead's account. Document the key fingerprint in `MAINTAINERS.md`.
 
-## Pages
+## Pages — verified live
 
-- [ ] Enable GitHub Pages on `bare-swift/bare-swift` with source = "GitHub Actions".
-- [ ] Verify after first push: https://bare-swift.github.io renders the generated `site/index.html`.
-- [ ] For each package repo, enable Pages with source = "GitHub Actions" so DocC can publish to https://bare-swift.github.io/<package>/.
+- [x] https://bare-swift.github.io/bare-swift/ — umbrella site (rendered from `packages/index.json`).
+- [x] https://bare-swift.github.io/swift-greet/documentation/greet/ — DocC for swift-greet.
+- [ ] (Future) https://bare-swift.github.io/bare-swift-cli/ — DocC for the CLI; not built in Phase 0 (CLI has no public library product to document).
 
 ## SwiftPM Index
 
-- [ ] After first package release, submit the org to https://swiftpackageindex.com so it auto-tracks all repos.
+- [ ] Submit the org to https://swiftpackageindex.com so it auto-tracks all repos. Form: https://swiftpackageindex.com/add-a-package
 
 ## Communications
 
 - [ ] Create a `bare-swift` tag on the Swift Forums for cross-pollination.
-- [ ] Set up GitHub Discussions categories: General, Q&A, Ideas, Show and tell, RFC discussion.
+- [ ] Set up GitHub Discussions categories on the umbrella repo: General, Q&A, Ideas, Show and tell, RFC discussion.
 
 ---
 
@@ -43,8 +48,13 @@ For each: enable Discussions, enable Issues, enable Pages (source: GitHub Action
 
 - [x] Umbrella repo content authored
 - [x] RFC-0001 + RFC-0002 landed
-- [x] CLI tool (`bare-swift new` + `extract-vectors` + `gen-site`) built and tested
-- [x] Shared CI / DocC / release workflows authored
-- [x] Demo package `swift-greet` scaffolded, tested, consumed end-to-end
+- [x] CLI tool (`bare-swift new` + `extract-vectors` + `gen-site`) built, tested, CI green
+- [x] Shared CI / DocC / release workflows authored, fixed for macos-15, verified green
+- [x] Demo package `swift-greet` scaffolded, tested, consumed end-to-end (local + via fresh SwiftPM project)
+- [x] All three repos pushed to GitHub, public, with workflows running
+- [x] swift-greet GitHub Release v0.1.0 created
+- [x] Umbrella site live at https://bare-swift.github.io/bare-swift/
+- [x] swift-greet DocC live at https://bare-swift.github.io/swift-greet/documentation/greet/
+- [x] Scaffold templates updated to include `docs.yml` + `release.yml` + `swift-docc-plugin` so future packages get them by default
 
-**Remaining for public Phase 0 launch (manual GH-side):** items above in this document.
+**Phase 0 is functionally complete.** Remaining items above are human-action: branch protection, GPG key, identity placeholders, SwiftPM Index submission, Forums tag.
