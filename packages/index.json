@@ -2,6 +2,15 @@
   "$schema_comment": "Each entry: name, module, tagline (1-line), repo (https URL), version (semver), source_crate (or null), tier (one of: foundation, encoding, hashing, format, observability, config, util, demo).",
   "packages": [
     {
+      "name": "swift-hex",
+      "module": "Hex",
+      "tagline": "Sendable, Foundation-free hex encoding (incl. constant-time).",
+      "repo": "https://github.com/bare-swift/swift-hex",
+      "version": "0.1.0",
+      "source_crate": "hex",
+      "tier": "encoding"
+    },
+    {
       "name": "swift-greet",
       "module": "Greet",
       "tagline": "A friendly greeter — Phase 0 demo package.",

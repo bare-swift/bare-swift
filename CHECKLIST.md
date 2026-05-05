@@ -13,11 +13,20 @@ This checklist tracks the state of the bare-swift GitHub presence. Items marked 
 - [x] `bare-swift/bare-swift` — umbrella, default branch `main`.
 - [x] `bare-swift/bare-swift-cli` — CLI tool, default branch `main`.
 - [x] `bare-swift/swift-greet` — demo package, default branch `main`, tag `v0.1.0`.
+- [x] `bare-swift/swift-hex` — first Phase 1 package, default branch `main`, tag `v0.1.0`.
 
 For each:
 - [x] Issues enabled.
 - [x] Discussions enabled (umbrella only — packages keep issue-only).
 - [x] Pages enabled (source: GitHub Actions).
+- [x] **`github-pages` environment configured to allow `v*` tags + `main` branch** (required for tag-triggered DocC deploys). Run after `gh repo create`:
+  ```bash
+  REPO=swift-newpkg
+  echo '{"deployment_branch_policy":{"protected_branches":false,"custom_branch_policies":true}}' \
+    | gh api -X PUT "repos/bare-swift/$REPO/environments/github-pages" --input -
+  echo '{"name":"main","type":"branch"}' | gh api -X POST "repos/bare-swift/$REPO/environments/github-pages/deployment-branch-policies" --input -
+  echo '{"name":"v*","type":"tag"}'      | gh api -X POST "repos/bare-swift/$REPO/environments/github-pages/deployment-branch-policies" --input -
+  ```
 - [ ] Branch protection on `main` (require PR, require status checks). Run for each repo:
       `gh api -X PUT "repos/bare-swift/<repo>/branches/main/protection" --input <protection.json>`
 
