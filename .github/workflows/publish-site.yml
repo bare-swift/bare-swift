@@ -1,0 +1,47 @@
+# Builds the umbrella site (site/index.html) from packages/index.json
+# and deploys it to GitHub Pages at https://bare-swift.github.io/bare-swift/.
+#
+# Triggered on push to main (so every package-index update reflows the site)
+# or manually via workflow_dispatch.
+name: publish-site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/index.json'
+      - '.github/workflows/publish-site.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: macos-14
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout umbrella
+        uses: actions/checkout@v4
+      - name: Checkout bare-swift-cli
+        uses: actions/checkout@v4
+        with:
+          repository: bare-swift/bare-swift-cli
+          path: .cli
+      - name: Build CLI (release)
+        working-directory: .cli
+        run: swift build -c release
+      - name: Generate site
+        run: ./.cli/.build/release/bare-swift gen-site --umbrella .
+      - name: Stage site directory for Pages
+        run: |
+          mkdir -p _site
+          cp site/index.html _site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
