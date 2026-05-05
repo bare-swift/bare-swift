@@ -9,6 +9,8 @@
 #   jobs:
 #     publish:
 #       uses: bare-swift/bare-swift/.github/workflows/publish-docs.yml@main
+#       with:
+#         target: Greet      # the Swift module name to document
 #       permissions:
 #         pages: write
 #         id-token: write
@@ -19,6 +21,11 @@ name: publish-docs
 
 on:
   workflow_call:
+    inputs:
+      target:
+        description: "Swift module name to generate DocC for"
+        required: true
+        type: string
 
 jobs:
   build-and-deploy:
@@ -32,13 +39,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Resolve dependencies
+        run: swift package resolve
       - name: Build DocC archive
         run: |
-          TARGET=$(swift package describe --type json | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('products',[{}])[0].get('targets',[d.get('targets',[{}])[0].get('name','')])[0] if d.get('products') else d['targets'][0]['name'])")
-          echo "Target: $TARGET"
           swift package --allow-writing-to-directory ./docs \
             generate-documentation \
-            --target "$TARGET" \
+            --target "${{ inputs.target }}" \
             --transform-for-static-hosting \
             --hosting-base-path "$(basename $GITHUB_REPOSITORY)" \
             --output-path ./docs
