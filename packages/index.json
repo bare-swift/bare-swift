@@ -20,6 +20,15 @@
       "tier": "hashing"
     },
     {
+      "name": "swift-dotenv",
+      "module": "DotEnv",
+      "tagline": ".env parser with ${VAR} expansion — Sendable, Foundation-free; pure function.",
+      "repo": "https://github.com/bare-swift/swift-dotenv",
+      "version": "0.1.0",
+      "source_crate": "dotenvy",
+      "tier": "config"
+    },
+    {
       "name": "swift-hex",
       "module": "Hex",
       "tagline": "Sendable, Foundation-free hex encoding (incl. constant-time).",
