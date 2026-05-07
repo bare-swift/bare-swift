@@ -47,6 +47,15 @@
       "tier": "config"
     },
     {
+      "name": "swift-hdrhistogram",
+      "module": "HdrHistogram",
+      "tagline": "HdrHistogram — fixed-precision-per-decade quantile structure; Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-hdrhistogram",
+      "version": "0.1.0",
+      "source_crate": "hdrhistogram",
+      "tier": "observability"
+    },
+    {
       "name": "swift-hex",
       "module": "Hex",
       "tagline": "Sendable, Foundation-free hex encoding (incl. constant-time).",
