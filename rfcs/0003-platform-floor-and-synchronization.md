@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
+| Status | Accepted |
 | Author | bare-swift project lead |
 | Created | 2026-05-07 |
-| Resolution | _(filled at merge)_ |
+| Resolution | Accepted 2026-05-07 — codifies the per-package platform-floor reality observed in Phase 1; swift-prometheus's `.macOS(.v15)` declaration is retroactively conformant. |
 
 ## Summary
 
@@ -73,8 +73,6 @@ Rejected for Phase 2's expected scope. swift-atomics is a well-engineered Apple 
 
 ## Resolution
 
-_(Filled by the project lead at merge time.)_
-
-- **Accepted** / **Rejected** / **Withdrawn**
-- Date:
-- Notes:
+- **Accepted**
+- Date: 2026-05-07
+- Notes: Phase 1 shipped exactly one package (swift-prometheus) under this rule; the other nine remained on `.macOS(.v14)`. The org-wide default in `bare-swift new` does not change. Per-package overrides require the README + CHANGELOG entries described above. Future packages with similar needs follow the same path. If macOS-15-only adopters become the meaningful majority, a follow-up RFC may bump the org-wide default; until then, holding at 14 keeps the on-ramp wide.

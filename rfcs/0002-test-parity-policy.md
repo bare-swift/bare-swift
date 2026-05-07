@@ -120,3 +120,7 @@ This is the founding test policy. No existing packages to migrate.
 ## Resolution
 
 **Accepted 2026-05-04.** Required for all packages from Phase 0 onward. The scaffold tool and `extract-vectors` subcommand are designed to make compliance frictionless.
+
+## Amendment 2026-05-07
+
+[RFC-0004](./0004-inline-test-vectors.md) (accepted 2026-05-07) makes **inline Swift literals** the default form of test vectors after every Phase 1 package converged on that pattern. The file-based MANIFEST + `Bundle.module` loader described above remains valid for upstreams that ship genuine data fixtures (Unicode tables, test corpora, fuzzer regression sets), but is no longer the universal default. Each package records its choice in `Tests/Vectors/EXCEPTIONS.md`.

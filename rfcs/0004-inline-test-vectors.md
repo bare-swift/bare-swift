@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
+| Status | Accepted |
 | Author | bare-swift project lead |
 | Created | 2026-05-07 |
-| Resolution | _(filled at merge)_ |
+| Resolution | Accepted 2026-05-07 — amends RFC-0002 to make inline Swift literals the default; file-based MANIFEST + `Bundle.module` loader remain valid for crates that ship genuine data fixtures. All 10 Phase 1 packages are retroactively conformant. |
 
 ## Summary
 
@@ -105,8 +105,6 @@ This RFC changes wording, not code. The 10 Phase 1 packages already conform.
 
 ## Resolution
 
-_(Filled by the project lead at merge time.)_
-
-- **Accepted** / **Rejected** / **Withdrawn**
-- Date:
-- Notes:
+- **Accepted**
+- Date: 2026-05-07
+- Notes: Effective immediately. RFC-0002's MANIFEST + `extract-vectors` mechanism remains in the codebase but is no longer the documented default; a short cross-reference is added to RFC-0002. Phase 2 packages may use either form; the choice is recorded in each package's `Tests/Vectors/EXCEPTIONS.md`. Tracking the per-package upstream pin (e.g., "vectors derived from `dotenvy 0.15.7`") on the umbrella site is a separate `packages/index.json` schema follow-up, not blocking acceptance.
