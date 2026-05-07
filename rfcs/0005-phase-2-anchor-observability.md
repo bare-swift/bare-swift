@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
+| Status | Accepted |
 | Author | bare-swift project lead |
 | Created | 2026-05-07 |
-| Resolution | _(filled at merge)_ |
+| Resolution | Accepted 2026-05-07 — Phase 2 plans may begin authoring once RFC-0006 (Bytes) lands. |
 
 ## Summary
 
@@ -114,8 +114,6 @@ Total: ~4 months calendar, mirroring Phase 1's pace. Tranche order is dependency
 
 ## Resolution
 
-_(Filled by the project lead at merge time.)_
-
-- **Accepted** / **Rejected** / **Withdrawn**
-- Date:
-- Notes:
+- **Accepted**
+- Date: 2026-05-07
+- Notes: Establishes the Phase 2 direction. Tranche 2A authoring is gated on RFC-0006 (Bytes / span-like buffer); 2B is dependency-blocked on 2A's swift-bytes; 2C is independent and can proceed in parallel with 2A once swift-prometheus 0.2 has a written spec. The non-goals section is binding — additions to scope require an amendment to this RFC, not unilateral inclusion in a Phase 2 plan.
