@@ -83,6 +83,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-statsd",
+      "module": "StatsD",
+      "tagline": "StatsD wire-format encoder (Etsy + DogStatsD) — Sendable, Foundation-free; outputs Bytes for UDP send.",
+      "repo": "https://github.com/bare-swift/swift-statsd",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-uuid",
       "module": "UUID",
       "tagline": "RFC 9562 UUIDs (v4, v7) and ULIDs — Sendable, Foundation-free.",
