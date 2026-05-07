@@ -11,6 +11,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-bytes",
+      "module": "Bytes",
+      "tagline": "Bytes value type + reader/writer cursors — Sendable, Foundation-free; bare-swift RFC-0006.",
+      "repo": "https://github.com/bare-swift/swift-bytes",
+      "version": "0.1.0",
+      "source_crate": "bytes",
+      "tier": "foundation"
+    },
+    {
       "name": "swift-crc",
       "module": "CRC",
       "tagline": "CRC8/16/32/64 — generic engine + catalog (Ethernet, iSCSI, MODBUS, XMODEM, XZ, …).",
