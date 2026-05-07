@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
+| Status | Accepted |
 | Author | bare-swift project lead |
 | Created | 2026-05-07 |
-| Resolution | _(filled at merge)_ |
+| Resolution | Accepted 2026-05-07 — unblocks Tranche 2A; swift-bytes is the first Phase 2 package to author. |
 
 ## Summary
 
@@ -186,8 +186,6 @@ Exactly one case in v0.1. Reader errors are uniformly "out of bytes"; if a subse
 
 ## Resolution
 
-_(Filled by the project lead at merge time.)_
-
-- **Accepted** / **Rejected** / **Withdrawn**
-- Date:
-- Notes:
+- **Accepted**
+- Date: 2026-05-07
+- Notes: swift-bytes becomes the first Phase 2 package to author (Tranche 2A). The v0.1 surface is the three types plus one error case described above; later RFC amendments add the deferred items (mutable slicing, `Span`/`RawSpan` bridges, endian-generic accessors). Phase 2's other packages (swift-otlp-exporter especially) target swift-bytes natively. Phase 1 packages do not migrate.
