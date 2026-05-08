@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
+| Status | Accepted |
 | Author | bare-swift project lead |
 | Created | 2026-05-08 |
-| Resolution | _(filled at merge)_ |
+| Resolution | Accepted 2026-05-08 — Phase 3 plans may begin authoring. First package: swift-tracing-otlp. |
 
 ## Summary
 
@@ -144,8 +144,6 @@ If we extract OTLP common types to a shared target (one of the unresolved questi
 
 ## Resolution
 
-_(Filled by the project lead at merge time.)_
-
-- **Accepted** / **Rejected** / **Withdrawn**
-- Date:
-- Notes:
+- **Accepted**
+- Date: 2026-05-08
+- Notes: Closes Gate 2 item 5. Phase 3 plans begin with swift-tracing-otlp (Tranche 3A); shared-vs-duplicated OTLP common types resolved per-package at brainstorm time. swift-log-otlp (Tranche 3C) status remains "stretch" — confirm or defer at the start of 3C.
