@@ -92,6 +92,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-prometheus-metrics",
+      "module": "PrometheusMetrics",
+      "tagline": "swift-metrics backend that routes to swift-prometheus — Sendable, bootstrap-friendly.",
+      "repo": "https://github.com/bare-swift/swift-prometheus-metrics",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-statsd",
       "module": "StatsD",
       "tagline": "StatsD wire-format encoder (Etsy + DogStatsD) — Sendable, Foundation-free; outputs Bytes for UDP send.",
