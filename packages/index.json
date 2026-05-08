@@ -87,7 +87,7 @@
       "module": "Prometheus",
       "tagline": "Prometheus metrics + text exposition — Sendable, Foundation-free; standalone (no swift-metrics dep).",
       "repo": "https://github.com/bare-swift/swift-prometheus",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": "prometheus-client",
       "tier": "observability"
     },
