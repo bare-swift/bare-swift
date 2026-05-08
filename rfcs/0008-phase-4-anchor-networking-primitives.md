@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
+| Status | Accepted |
 | Author | bare-swift project lead |
 | Created | 2026-05-09 |
-| Resolution | _(filled at merge)_ |
+| Resolution | Accepted 2026-05-09 — Phase 4 plans may begin authoring. First package: swift-uri. |
 
 ## Summary
 
@@ -153,8 +153,6 @@ If swift-uri eventually supplants Foundation's URL in some bare-swift package (e
 
 ## Resolution
 
-_(Filled by the project lead at merge time.)_
-
-- **Accepted** / **Rejected** / **Withdrawn**
-- Date:
-- Notes:
+- **Accepted**
+- Date: 2026-05-09
+- Notes: Closes Gate 3 item 5. Phase 4 plans begin with swift-uri (Tranche 4A). IDNA scope decision (ASCII-fast-path + best-effort UTS46 in v0.1, full IDNA in v0.2) is the key open scoping question for swift-uri's per-package brainstorm. Tranche 4D selection deferred to start-of-4D per RFC.
