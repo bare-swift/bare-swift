@@ -110,6 +110,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-tracing-otlp",
+      "module": "TracingOTLP",
+      "tagline": "OpenTelemetry OTLP/traces encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
+      "repo": "https://github.com/bare-swift/swift-tracing-otlp",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-uuid",
       "module": "UUID",
       "tagline": "RFC 9562 UUIDs (v4, v7) and ULIDs — Sendable, Foundation-free.",
