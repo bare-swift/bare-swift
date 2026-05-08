@@ -23,6 +23,11 @@ on:
         required: false
         type: boolean
         default: false  # turn on per-package once a tag exists
+      docc-target:
+        description: "Restrict DocC build to a single target (e.g., 'PrometheusMetrics' for packages with multiple library deps where dep DocC warns under --warnings-as-errors)."
+        required: false
+        type: string
+        default: ""
 
 jobs:
   build-and-test:
@@ -66,8 +71,12 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
-      - name: Build DocC
+      - name: Build DocC (all targets)
+        if: ${{ inputs.docc-target == '' }}
         run: swift package generate-documentation --warnings-as-errors
+      - name: Build DocC (single target)
+        if: ${{ inputs.docc-target != '' }}
+        run: swift package generate-documentation --target ${{ inputs.docc-target }} --warnings-as-errors
 
   api-stability:
     if: ${{ inputs.check-api-stability }}
