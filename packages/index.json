@@ -38,6 +38,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-distributed-tracing-bridge",
+      "module": "DistributedTracingBridge",
+      "tagline": "Apple swift-distributed-tracing → swift-tracing-otlp adapter — Sendable, bootstrap-friendly.",
+      "repo": "https://github.com/bare-swift/swift-distributed-tracing-bridge",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-dotenv",
       "module": "DotEnv",
       "tagline": ".env parser with ${VAR} expansion — Sendable, Foundation-free; pure function.",
