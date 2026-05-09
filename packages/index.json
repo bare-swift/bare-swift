@@ -92,6 +92,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-log-otlp",
+      "module": "LogOTLP",
+      "tagline": "OpenTelemetry OTLP/logs encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
+      "repo": "https://github.com/bare-swift/swift-log-otlp",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-mime",
       "module": "MIME",
       "tagline": "RFC 9110 media-type parser, serializer, and curated IANA catalog — Sendable, Foundation-free.",
