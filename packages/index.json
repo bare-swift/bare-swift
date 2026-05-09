@@ -110,6 +110,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-msgpack",
+      "module": "MsgPack",
+      "tagline": "MessagePack encoder + decoder — Sendable, Foundation-free; outputs Bytes for wire use.",
+      "repo": "https://github.com/bare-swift/swift-msgpack",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-otlp-exporter",
       "module": "OTLPExporter",
       "tagline": "OpenTelemetry OTLP/metrics encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
