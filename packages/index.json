@@ -164,6 +164,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-toml",
+      "module": "TOML",
+      "tagline": "TOML 1.0 parser + serializer — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-toml",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-tracing-otlp",
       "module": "TracingOTLP",
       "tagline": "OpenTelemetry OTLP/traces encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
