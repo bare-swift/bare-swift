@@ -29,6 +29,15 @@
       "tier": "hashing"
     },
     {
+      "name": "swift-cookie",
+      "module": "Cookie",
+      "tagline": "RFC 6265 Cookie/Set-Cookie parser and serializer — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-cookie",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-ddsketch",
       "module": "DDSketch",
       "tagline": "DDSketch quantile sketch with relative-error guarantees — Sendable, Foundation-free; mergeable.",
