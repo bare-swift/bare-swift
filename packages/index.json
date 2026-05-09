@@ -29,6 +29,15 @@
       "tier": "hashing"
     },
     {
+      "name": "swift-cbor",
+      "module": "CBOR",
+      "tagline": "RFC 8949 CBOR encoder + decoder — Sendable, Foundation-free; outputs Bytes for wire use.",
+      "repo": "https://github.com/bare-swift/swift-cbor",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-cookie",
       "module": "Cookie",
       "tagline": "RFC 6265 Cookie/Set-Cookie parser and serializer — Sendable, Foundation-free.",
