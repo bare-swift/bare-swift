@@ -281,6 +281,15 @@
       "tier": "hashing"
     },
     {
+      "name": "swift-zlib",
+      "module": "Zlib",
+      "tagline": "RFC 1950 zlib decoder — Sendable, Foundation-free; wraps swift-deflate.",
+      "repo": "https://github.com/bare-swift/swift-zlib",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "compression"
+    },
+    {
       "name": "swift-greet",
       "module": "Greet",
       "tagline": "A friendly greeter — Phase 0 demo package.",
