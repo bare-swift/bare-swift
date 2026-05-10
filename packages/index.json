@@ -56,6 +56,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-deflate",
+      "module": "Deflate",
+      "tagline": "RFC 1951 INFLATE (DEFLATE decompression) — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-deflate",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "compression"
+    },
+    {
       "name": "swift-distributed-tracing-bridge",
       "module": "DistributedTracingBridge",
       "tagline": "Apple swift-distributed-tracing → swift-tracing-otlp adapter — Sendable, bootstrap-friendly.",
