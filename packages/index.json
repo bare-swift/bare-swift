@@ -227,6 +227,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-range",
+      "module": "HTTPRange",
+      "tagline": "RFC 7233 byte-range header parser, Content-Range serializer, satisfiability helper — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-range",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-statsd",
       "module": "StatsD",
       "tagline": "StatsD wire-format encoder (Etsy + DogStatsD) — Sendable, Foundation-free; outputs Bytes for UDP send.",
