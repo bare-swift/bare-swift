@@ -38,6 +38,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-content-encoding",
+      "module": "ContentEncoding",
+      "tagline": "HTTP Content-Encoding header multiplexer (identity, gzip, deflate) — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-content-encoding",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "compression"
+    },
+    {
       "name": "swift-cookie",
       "module": "Cookie",
       "tagline": "RFC 6265 Cookie/Set-Cookie parser and serializer — Sendable, Foundation-free.",
