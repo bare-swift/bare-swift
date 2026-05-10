@@ -101,6 +101,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-jsonpatch",
+      "module": "JSONPatch",
+      "tagline": "RFC 6902 JSON Patch operations on swift-json — Sendable, Foundation-free, atomic apply.",
+      "repo": "https://github.com/bare-swift/swift-jsonpatch",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-jsonpath",
       "module": "JSONPath",
       "tagline": "RFC 9535 JSONPath query expressions over swift-json — Sendable, Foundation-free.",
