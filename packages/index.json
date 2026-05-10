@@ -168,7 +168,7 @@
       "module": "TOML",
       "tagline": "TOML 1.0 parser + serializer — Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-toml",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source_crate": null,
       "tier": "format"
     },
