@@ -164,6 +164,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-time",
+      "module": "Time",
+      "tagline": "Foundation-free wall-clock time primitives (Instant, Duration, Calendar) + RFC 3339 / RFC 1123 parsers — Sendable.",
+      "repo": "https://github.com/bare-swift/swift-time",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "foundation"
+    },
+    {
       "name": "swift-toml",
       "module": "TOML",
       "tagline": "TOML 1.0 parser + serializer — Sendable, Foundation-free.",
