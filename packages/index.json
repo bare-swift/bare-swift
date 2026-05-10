@@ -128,6 +128,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-jsonschema-lite",
+      "module": "JSONSchemaLite",
+      "tagline": "JSON Schema 2020-12 subset (type/required/properties/items/enum/const) — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-jsonschema-lite",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-log-otlp",
       "module": "LogOTLP",
       "tagline": "OpenTelemetry OTLP/logs encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
