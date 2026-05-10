@@ -191,6 +191,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-multipart",
+      "module": "Multipart",
+      "tagline": "RFC 7578 multipart/form-data parser + serializer — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-multipart",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-otlp-exporter",
       "module": "OTLPExporter",
       "tagline": "OpenTelemetry OTLP/metrics encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
