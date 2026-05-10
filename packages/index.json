@@ -101,6 +101,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-jsonpath",
+      "module": "JSONPath",
+      "tagline": "RFC 9535 JSONPath query expressions over swift-json — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-jsonpath",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-jsonpointer",
       "module": "JSONPointer",
       "tagline": "RFC 6901 JSON Pointer (standard + URI Fragment) — Sendable, Foundation-free, JSON-tree agnostic.",
