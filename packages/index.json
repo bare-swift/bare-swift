@@ -92,6 +92,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-json",
+      "module": "JSON",
+      "tagline": "RFC 8259 JSON parser + serializer — Sendable, Foundation-free, non-Codable.",
+      "repo": "https://github.com/bare-swift/swift-json",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "format"
+    },
+    {
       "name": "swift-jsonpointer",
       "module": "JSONPointer",
       "tagline": "RFC 6901 JSON Pointer (standard + URI Fragment) — Sendable, Foundation-free, JSON-tree agnostic.",
