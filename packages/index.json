@@ -33,7 +33,7 @@
       "module": "CBOR",
       "tagline": "RFC 8949 CBOR encoder + decoder — Sendable, Foundation-free; outputs Bytes for wire use.",
       "repo": "https://github.com/bare-swift/swift-cbor",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "format"
     },
@@ -42,7 +42,7 @@
       "module": "Cookie",
       "tagline": "RFC 6265 Cookie/Set-Cookie parser and serializer — Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-cookie",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "format"
     },
@@ -114,7 +114,7 @@
       "module": "LogOTLP",
       "tagline": "OpenTelemetry OTLP/logs encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
       "repo": "https://github.com/bare-swift/swift-log-otlp",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "observability"
     },
@@ -132,7 +132,7 @@
       "module": "MsgPack",
       "tagline": "MessagePack encoder + decoder — Sendable, Foundation-free; outputs Bytes for wire use.",
       "repo": "https://github.com/bare-swift/swift-msgpack",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "format"
     },
@@ -186,7 +186,7 @@
       "module": "TOML",
       "tagline": "TOML 1.0 parser + serializer — Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-toml",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "format"
     },
@@ -195,7 +195,7 @@
       "module": "TracingOTLP",
       "tagline": "OpenTelemetry OTLP/traces encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
       "repo": "https://github.com/bare-swift/swift-tracing-otlp",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "observability"
     },
