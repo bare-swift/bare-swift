@@ -173,6 +173,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-link-header",
+      "module": "LinkHeader",
+      "tagline": "RFC 8288 Link: header parser + serializer with RFC 8187 extended values — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-link-header",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-log-otlp",
       "module": "LogOTLP",
       "tagline": "OpenTelemetry OTLP/logs encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
