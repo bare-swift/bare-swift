@@ -11,6 +11,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-basic-auth",
+      "module": "BasicAuth",
+      "tagline": "RFC 7617 HTTP Basic Authentication header parser + serializer — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-basic-auth",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-brotli",
       "module": "Brotli",
       "tagline": "RFC 7932 Brotli decoder — Sendable, Foundation-free.",
