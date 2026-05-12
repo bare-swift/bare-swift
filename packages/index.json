@@ -11,6 +11,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-brotli",
+      "module": "Brotli",
+      "tagline": "RFC 7932 Brotli decoder — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-brotli",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "compression"
+    },
+    {
       "name": "swift-bytes",
       "module": "Bytes",
       "tagline": "Bytes value type + reader/writer cursors — Sendable, Foundation-free; bare-swift RFC-0006.",
