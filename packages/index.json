@@ -58,9 +58,9 @@
     {
       "name": "swift-content-encoding",
       "module": "ContentEncoding",
-      "tagline": "HTTP Content-Encoding multiplexer — decoder (v0.1+) and encoder (v0.2+). Sendable, Foundation-free.",
+      "tagline": "HTTP Content-Encoding multiplexer — identity / gzip / deflate / br decode; gzip+deflate encode. Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-content-encoding",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_crate": null,
       "tier": "compression"
     },
