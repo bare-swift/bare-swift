@@ -20,6 +20,15 @@
       "tier": "http"
     },
     {
+      "name": "swift-bearer",
+      "module": "Bearer",
+      "tagline": "RFC 6750 HTTP Bearer Authentication header parser + serializer + WWW-Authenticate challenge parser — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-bearer",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-brotli",
       "module": "Brotli",
       "tagline": "RFC 7932 Brotli decoder — Sendable, Foundation-free.",
