@@ -200,6 +200,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-jwt-verify",
+      "module": "JWTVerify",
+      "tagline": "JWS-compact JWT verifier (HS256 + ES256) — wraps swift-crypto. Sendable, Foundation-free public API.",
+      "repo": "https://github.com/bare-swift/swift-jwt-verify",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-link-header",
       "module": "LinkHeader",
       "tagline": "RFC 8288 Link: header parser + serializer with RFC 8187 extended values — Sendable, Foundation-free.",
