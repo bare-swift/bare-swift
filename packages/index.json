@@ -328,9 +328,9 @@
     {
       "name": "swift-zlib",
       "module": "Zlib",
-      "tagline": "RFC 1950 zlib decoder — Sendable, Foundation-free; wraps swift-deflate.",
+      "tagline": "RFC 1950 zlib codec — decoder (v0.1+) and encoder (v0.2+). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-zlib",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "compression"
     },
