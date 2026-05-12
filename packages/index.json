@@ -103,9 +103,9 @@
     {
       "name": "swift-gzip",
       "module": "Gzip",
-      "tagline": "RFC 1952 gzip decoder — Sendable, Foundation-free; wraps swift-deflate.",
+      "tagline": "RFC 1952 gzip codec — decoder (v0.1+) and encoder (v0.2+). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-gzip",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "compression"
     },
