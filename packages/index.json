@@ -200,6 +200,15 @@
       "tier": "format"
     },
     {
+      "name": "swift-jwt-claims",
+      "module": "JWTClaims",
+      "tagline": "RFC 7519 § 4.1 registered-claim validator (exp/nbf/iat/iss/aud/sub/jti) — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-jwt-claims",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-jwt-verify",
       "module": "JWTVerify",
       "tagline": "JWS-compact JWT verifier (HS256 + ES256) — wraps swift-crypto. Sendable, Foundation-free public API.",
