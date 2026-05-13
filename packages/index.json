@@ -236,6 +236,15 @@
       "tier": "http"
     },
     {
+      "name": "swift-log-bridge",
+      "module": "LogBridge",
+      "tagline": "Apple swift-log LogHandler that emits OTLP log records with automatic trace correlation — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-log-bridge",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-log-otlp",
       "module": "LogOTLP",
       "tagline": "OpenTelemetry OTLP/logs encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
