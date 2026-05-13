@@ -157,9 +157,9 @@
     {
       "name": "swift-idna",
       "module": "IDNA",
-      "tagline": "RFC 3492 Punycode codec for Internationalized Domain Names — Sendable, Foundation-free.",
+      "tagline": "Internationalized Domain Names — UTS #46 + NFC + RFC 3492 Punycode. Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-idna",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": "idna",
       "tier": "format"
     },
