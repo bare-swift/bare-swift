@@ -357,7 +357,7 @@
       "module": "TracingOTLP",
       "tagline": "OpenTelemetry OTLP/traces encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
       "repo": "https://github.com/bare-swift/swift-tracing-otlp",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_crate": null,
       "tier": "observability"
     },
