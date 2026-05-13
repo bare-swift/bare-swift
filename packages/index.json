@@ -281,6 +281,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-otlp-json",
+      "module": "OTLPJSON",
+      "tagline": "OTLP/HTTP/JSON encoder for traces / logs / metrics — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-otlp-json",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-prometheus",
       "module": "Prometheus",
       "tagline": "Prometheus metrics + text exposition — Sendable, Foundation-free; standalone (no swift-metrics dep).",
