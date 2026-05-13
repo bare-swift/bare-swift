@@ -155,6 +155,15 @@
       "tier": "encoding"
     },
     {
+      "name": "swift-idna",
+      "module": "IDNA",
+      "tagline": "RFC 3492 Punycode codec for Internationalized Domain Names — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-idna",
+      "version": "0.1.0",
+      "source_crate": "idna",
+      "tier": "format"
+    },
+    {
       "name": "swift-json",
       "module": "JSON",
       "tagline": "RFC 8259 JSON parser + serializer — Sendable, Foundation-free, non-Codable.",
