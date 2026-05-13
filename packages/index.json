@@ -355,9 +355,9 @@
     {
       "name": "swift-uri",
       "module": "URI",
-      "tagline": "WHATWG URL parser + serializer — Sendable, Foundation-free; outputs Bytes for HTTP wire use.",
+      "tagline": "WHATWG URL parser + serializer with IDNA-aware host accessors — Sendable, Foundation-free; outputs Bytes for HTTP wire use.",
       "repo": "https://github.com/bare-swift/swift-uri",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "format"
     },
