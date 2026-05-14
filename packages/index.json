@@ -254,6 +254,15 @@
       "tier": "observability"
     },
     {
+      "name": "swift-metrics-bridge",
+      "module": "MetricsBridge",
+      "tagline": "Apple swift-metrics MetricsFactory that emits OTLP metric records with automatic exemplar correlation — Sendable, Foundation-free.",
+      "repo": "https://github.com/bare-swift/swift-metrics-bridge",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "observability"
+    },
+    {
       "name": "swift-mime",
       "module": "MIME",
       "tagline": "RFC 9110 media-type parser, serializer, and curated IANA catalog — Sendable, Foundation-free.",
