@@ -112,9 +112,9 @@
     {
       "name": "swift-distributed-tracing-bridge",
       "module": "DistributedTracingBridge",
-      "tagline": "Apple swift-distributed-tracing → swift-tracing-otlp adapter — Sendable, bootstrap-friendly.",
+      "tagline": "Apple swift-distributed-tracing → swift-tracing-otlp adapter with W3C TraceContext extract/inject — Sendable, bootstrap-friendly.",
       "repo": "https://github.com/bare-swift/swift-distributed-tracing-bridge",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "observability"
     },
