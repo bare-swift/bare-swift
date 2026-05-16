@@ -103,9 +103,9 @@
     {
       "name": "swift-deflate",
       "module": "Deflate",
-      "tagline": "RFC 1951 DEFLATE codec — INFLATE (v0.1+) and DEFLATE encoder (v0.2+). Sendable, Foundation-free.",
+      "tagline": "RFC 1951 DEFLATE codec — inflate (v0.1) + one-shot encode (v0.2) + streaming encode (v0.3). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-deflate",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_crate": null,
       "tier": "compression"
     },
