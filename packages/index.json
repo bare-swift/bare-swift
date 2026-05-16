@@ -292,9 +292,9 @@
     {
       "name": "swift-oauth2-client",
       "module": "OAuth2Client",
-      "tagline": "RFC 6749 OAuth 2.0 token-endpoint client — Sendable, Foundation-free; caller-driven HTTP transport.",
+      "tagline": "RFC 6749 OAuth 2.0 client — token endpoint (v0.1) + auth flow start (v0.2: auth URL + PKCE + state/nonce + Basic auth). Sendable, public API Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-oauth2-client",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "http"
     },
