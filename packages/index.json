@@ -220,9 +220,9 @@
     {
       "name": "swift-jwt-verify",
       "module": "JWTVerify",
-      "tagline": "JWS-compact JWT verifier (HS256 + ES256) — wraps swift-crypto. Sendable, Foundation-free public API.",
+      "tagline": "JWS-compact JWT verifier and signer (HS256 + ES256) — wraps swift-crypto. Sendable, Foundation-free public API.",
       "repo": "https://github.com/bare-swift/swift-jwt-verify",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source_crate": null,
       "tier": "http"
     },
