@@ -290,6 +290,15 @@
       "tier": "http"
     },
     {
+      "name": "swift-oauth2-client",
+      "module": "OAuth2Client",
+      "tagline": "RFC 6749 OAuth 2.0 token-endpoint client — Sendable, Foundation-free; caller-driven HTTP transport.",
+      "repo": "https://github.com/bare-swift/swift-oauth2-client",
+      "version": "0.1.0",
+      "source_crate": null,
+      "tier": "http"
+    },
+    {
       "name": "swift-otlp-exporter",
       "module": "OTLPExporter",
       "tagline": "OpenTelemetry OTLP/metrics encoder over HTTP+protobuf — Sendable, Foundation-free; outputs Bytes ready for HTTP POST.",
