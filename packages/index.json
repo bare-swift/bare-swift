@@ -31,9 +31,9 @@
     {
       "name": "swift-brotli",
       "module": "Brotli",
-      "tagline": "RFC 7932 Brotli codec — decoder (v0.1) + encoder (v0.2). Sendable, Foundation-free.",
+      "tagline": "RFC 7932 Brotli codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-brotli",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_crate": null,
       "tier": "compression"
     },
