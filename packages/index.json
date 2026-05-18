@@ -31,9 +31,9 @@
     {
       "name": "swift-brotli",
       "module": "Brotli",
-      "tagline": "RFC 7932 Brotli codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3) + drain() for multi-coding composition (v0.4) + streaming decoder (v0.5, buffering wrap). Sendable, Foundation-free.",
+      "tagline": "RFC 7932 Brotli codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3) + drain() for multi-coding composition (v0.4) + streaming decoder (v0.5) + true memory-streaming decode (v0.6). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-brotli",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "source_crate": null,
       "tier": "compression"
     },
