@@ -76,9 +76,9 @@
     {
       "name": "swift-content-encoding",
       "module": "ContentEncoding",
-      "tagline": "HTTP Content-Encoding multiplexer — identity / gzip / deflate / br one-shot encode + decode (v0.4) + single-coding streaming encode (v0.5) + multi-coding streaming encode (v0.6) + streaming decode (v0.7, single + multi-coding). Sendable, Foundation-free.",
+      "tagline": "HTTP Content-Encoding multiplexer — identity / gzip / deflate / br one-shot encode + decode (v0.4) + single-coding streaming encode (v0.5) + multi-coding streaming encode (v0.6) + streaming decode (v0.7) + true memory-streaming for deflate/gzip/zlib chains (v0.8, brotli still buffering). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-content-encoding",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "source_crate": null,
       "tier": "compression"
     },
@@ -130,9 +130,9 @@
     {
       "name": "swift-gzip",
       "module": "Gzip",
-      "tagline": "RFC 1952 gzip codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3) + drain() for multi-coding composition (v0.4) + streaming-symmetric decoder API (v0.5). Sendable, Foundation-free.",
+      "tagline": "RFC 1952 gzip codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3) + drain() for multi-coding composition (v0.4) + streaming-symmetric decoder API (v0.5) + inherits true memory-streaming inflate from swift-deflate v0.6 (v0.6+). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-gzip",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "source_crate": null,
       "tier": "compression"
     },
@@ -427,9 +427,9 @@
     {
       "name": "swift-zlib",
       "module": "Zlib",
-      "tagline": "RFC 1950 zlib codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3) + drain() for multi-coding composition (v0.4) + streaming-symmetric decoder API (v0.5). Sendable, Foundation-free.",
+      "tagline": "RFC 1950 zlib codec — decoder (v0.1) + one-shot encoder (v0.2) + streaming encoder (v0.3) + drain() for multi-coding composition (v0.4) + streaming-symmetric decoder API (v0.5) + inherits true memory-streaming inflate from swift-deflate v0.6 (v0.6+). Sendable, Foundation-free.",
       "repo": "https://github.com/bare-swift/swift-zlib",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "source_crate": null,
       "tier": "compression"
     },
